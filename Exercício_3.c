@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(){
 int salario, novo_salario;
   printf("Qual eh seu salario? ");
