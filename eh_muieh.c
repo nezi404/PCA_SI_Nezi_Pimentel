@@ -1,26 +1,22 @@
-# include <stdio.h>
-int main(){
-int idade;
-char nome, sexo, gen;
-printf("Qual é seu sexo, nome e idade?");
-scanf("%s", sexo);
-scanf("%s", nome);
-scanf("%d", idade);
-gen = "mulher"
-if int strcmp(char *nome, char *gen)=1
-  printf("eh mulher";
-}
-// outro
-# include <stdio.h>
+#include <stdio.h>
+#include <string.h>
+
 int main(){
     int idade;
-    char nome[10], sexo[10], gen[10];
-    printf("Qual é seu sexo, nome e idade?");
-    scanf("%s", &sexo);
-    scanf("%s", &nome);
+    char nome[14], sexo[14], gen[14] = "mulher";
+    printf("Qual é seu sexo?");
+    scanf("%s", sexo);
+    printf("Qual é seu nome?");
+    scanf("%s", nome);
+    printf("Qual é sua idade?");
     scanf("%d", &idade);
-    gen = &"mulher";
-    if strcmp(char *nome, char *gen)=1;
-        printf("eh mulher");
+    
+    if (strcmp(sexo, gen)==0) {
+        printf("é mulher");
+    }
+    else{
+        printf("não é mulher");
+    } 
+    
+    return 0;
 }
-         //no sei mama mia o char nao tá pegando ou algo assim
