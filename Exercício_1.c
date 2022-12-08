@@ -1,6 +1,6 @@
-// o codigo tá dando uns numero mo aleatorio no cmpilador online, era o & no printf
-# include <stdio.h>
-int main(void){
+#include <stdio.h>
+
+int main(){
   int lado, base, area;
   printf("Insira o tamanho do lado do triangulo: ");
   scanf("%d", &lado);
