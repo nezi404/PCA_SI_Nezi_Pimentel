@@ -6,7 +6,7 @@ int main() {
     scanf("%f", &sal_hor);
     printf("Quantas horas você trabalha?");
     scanf("%f", &hor);
-    sal = hor * sal_hor * 30;
+    sal = hor * sal_hor;
     sin = sal * 0.05;
 	ir = sal * 0.11;
     inss = sal * 0.08;
