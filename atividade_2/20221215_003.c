@@ -1,9 +1,13 @@
 #include <stdio.h>
 
+//20221215_003. Faça um Programa que converta metros para centímetros.
+
+
 int main() {
-    int prim, resul;
+    float prim;
+    int resul;
     printf("Insira o número para a converção em cm: ");
-    scanf("%d", &prim);
+    scanf("%f", &prim);
     resul = prim*100;
-    printf("%d metros é/são %d cm ",prim,resul);
+    printf("%0.2f metros é/são %d cm ",prim,resul);
 }
