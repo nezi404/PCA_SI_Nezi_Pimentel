@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int prim, seg, ter, qua, resul;
+    float prim, seg, ter, qua, resul;
     printf("primeira nota ");
-    scanf("%d", &prim);
+    scanf("%f", &prim);
     printf("segunda nota ");
-    scanf("%d", &seg);
+    scanf("%f", &seg);
     printf("terceira nota ");
-    scanf("%d", &ter);
+    scanf("%f", &ter);
     printf("quarta nota ");
-    scanf("%d", &qua);
-    resul = prim + seg + ter + qua;
-    printf("O valor da soma eh %0.2d", resul);
+    scanf("%f", &qua);
+    resul = (prim + seg + ter + qua)/4;
+    printf("O valor da media é %0.2f", resul);
 }
