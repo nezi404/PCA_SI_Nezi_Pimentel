@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// 20221215_002. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+
 int main() {
     float prim, seg, ter, qua, resul;
     printf("primeira nota ");
