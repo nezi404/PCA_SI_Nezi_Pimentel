@@ -2,8 +2,8 @@
 
 int main() {
     int prim, resul;
-    printf("Insira o numero para convercao em cm: ");
+    printf("Insira o número para a converção em cm: ");
     scanf("%d", &prim);
     resul = prim*100;
-    printf("O valor da convercao eh %d", resul);
+    printf("%d metros é/são %d cm ",prim,resul);
 }
