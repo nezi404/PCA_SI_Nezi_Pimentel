@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// 20221215_008.  Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit.
+
 int main() {
     float fire, cel;
     printf("Temperatura em celsius: ");
