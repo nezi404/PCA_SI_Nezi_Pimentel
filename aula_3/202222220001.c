@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+  int cont = 0, num = 0, num1;
+  while (cont < 5){
+      cont = cont + 1;
+      printf("Numeros para soma: ");
+      scanf("%d", &num1);
+      if (num1%2 !=0)
+        num = num1 + num;
+      
+  }
+printf("A soma dos numeros impares dados: %d", num);
+  
+}
