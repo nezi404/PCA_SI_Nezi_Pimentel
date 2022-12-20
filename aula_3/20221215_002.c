@@ -2,15 +2,14 @@
 
 int main() {
   int cont = 0, num = 0, num1;
-  float media;
-  while (cont < 4){
+  while (cont < 5){
       cont = cont + 1;
-      printf("Notas para soma: ");
+      printf("Numeros para soma: ");
       scanf("%d", &num1);
-      num = num1 + num;
+      if (num1%2 !=0)
+        num = num1 + num;
       
   }
-media = num/4;
-printf("A media: %0.2f", media);
+printf("A soma dos numeros impares dados: %d", num);
   
 }
