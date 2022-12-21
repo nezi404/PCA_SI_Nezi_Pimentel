@@ -3,7 +3,7 @@
 
 int main() {
   int cont = 0, num = 0, num1, menoval = 0;
-  while (cont < 5){
+  while (cont < 20){
       cont = cont + 1;
       printf("Numeros inteiros: ");
       scanf("%d", &num1);
