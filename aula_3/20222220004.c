@@ -1,4 +1,6 @@
-
+/*
+20222220004 Construa um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.
+*/
 #include <stdio.h>
 
 int main() {
