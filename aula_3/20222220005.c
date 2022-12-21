@@ -1,4 +1,6 @@
-
+/*
+20222220005 Altere o programa anterior para que ele não permita a entrada de valores negativos.
+*/
 #include <stdio.h>
 
 int main() {
@@ -9,8 +11,8 @@ int main() {
       scanf("%d", &num1);
       
       if (num1 < 0) {
-          printf("Não é permitida a entrada de números negativos");
-          return;
+          printf("Nao eh permitida a entrada de numeros negativos");
+          return 0;
       }
       if (num1 > num){
         num = num1;
