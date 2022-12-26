@@ -13,7 +13,7 @@ n3 para n assumindo valores de 1 a p.
 
 int main(){
 	int num, acum = 0, a = 0,  cont = 1, cont2 = 1;
-	printf("Insira um quadrado perfeito: " );
+	printf("Insira um cubo perfeito: " );
 	scanf("%d", &num);
 	while (acum != num){
 		while (acum < num){
