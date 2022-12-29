@@ -10,18 +10,20 @@ quer computar a raiz quadrada:
 
 int main(){
 	float tes1, tes2, tes_2, num, raiz, power, abs, subi;
+	int raizfun;
 	printf("Numero: ");
 	scanf("%f", &num);
 	tes1 = num/2;
 	tes_2 = tes1;
 	tes2 = num;
+	raizfun = sqrt(num);
 	raiz = true;
 	while (raiz == true){
 	power = pow(tes_2, 2);
 	tes2 = tes_2-((power-num)/(2*tes_2));
 	abs = fabs(tes2 - tes1);
 		if (abs < 0.1){
-		printf("A raiz de %0.f eh %0.f", num, tes2);
+		printf("A raiz de %0.f eh %0.f\nResultado obtido por sqrt(): %d", num, tes2, raizfun);
 		return 0;
 		
 	}
