@@ -6,10 +6,14 @@ retângulo com catetos inteiros.
 #include <stdio.h>
 #include <math.h>
 int main(){
-	int n, conta, contb= 0, igual;
-	float  catquara = 0, squaa = 0, squab = 0;
-	printf("Numero n: ");
-	scanf("%d", &n);
+	int conta, contb= 0;
+	float  catquara = 0, squaa = 0, squab = 0, n;
+	printf("Numero inteiro positivo: ");
+	scanf("%f", &n);
+	if ((n == 0) || (int(n)-n != 0) || (n <= 0)){
+		printf("Nao eh permitido a entrada de numero negativo, nao inteiro ou igual a zero.");
+		return 0;
+	}	
 	while (contb <= conta ){	
 		conta= 1;
 		contb++;
@@ -29,3 +33,5 @@ int main(){
 		}
 		return 0;
 }
+
+	
