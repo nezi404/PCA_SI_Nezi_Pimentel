@@ -9,10 +9,14 @@ quer computar a raiz quadrada:
 #include <math.h>
 
 int main(){
-	float tes1, tes2, tes_2, num, raiz, power, abs, subi;
-	int raizfun;
-	printf("Numero: ");
+	float tes1, tes2, tes_2, num, raiz, power, abs, subi, raizfun;
+	
+	printf("Numero positivo: ");
 	scanf("%f", &num);
+	if (num <= 0){
+		printf("Eh permitido somente numeros positivos");
+		return 0;
+	}
 	tes1 = num/2;
 	tes_2 = tes1;
 	tes2 = num;
@@ -22,12 +26,18 @@ int main(){
 	power = pow(tes_2, 2);
 	tes2 = tes_2-((power-num)/(2*tes_2));
 	abs = fabs(tes2 - tes1);
-		if (abs < 0.1){
-		printf("A raiz de %0.f eh %0.f\nResultado obtido por sqrt(): %d", num, tes2, raizfun);
+		if (abs < 0.1 && num - int(num ) == 0 && raizfun - int(raizfun ) == 0){
+		printf("A raiz de %0.f eh %.0f\nResultado obtido por sqrt(): %.0f", num, tes2, raizfun);
 		return 0;
-		
+	}	
+	if (abs < 0.1 && num - int(num ) == 0){
+		printf("A raiz de %0.f eh %.2f\nResultado obtido por sqrt(): %.2f", num, tes2, raizfun);
+		return 0;
+	}		
+		if (abs < 0.1 ){
+		printf("A raiz de %.2f eh %.2f\nResultado obtido por sqrt(): %.2f", num, tes2, raizfun);	
+		return 0;
 	}
-		
 	tes_2 = tes2;
 	tes1 = tes2;
 	}
