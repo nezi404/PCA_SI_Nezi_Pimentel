@@ -6,7 +6,7 @@ o maior e o menor deles e mostra o resultado.
 
 int main() {
   float cont = 0, num = 0, num1, menoval = 0;
-  while (cont < 4){
+  while (cont < 15){
       cont = cont + 1;
       printf("Numeros : ");
       scanf("%f", &num1);
@@ -21,7 +21,18 @@ int main() {
         menoval = num1;  
       }
   }
-  
-printf("O maoir numero  eh: %0.2f\nO menor numero eh: %0.2f", num, menoval);
-  
+	if (num - int(num) !=0 && menoval - int(menoval) != 0) {
+		printf("O maoir numero  eh: %0.2f\nO menor numero eh: %0.2f", num, menoval);
+		return 0;
+}
+	if ( menoval - int(menoval) != 0) {
+		printf("O maoir numero  eh: %.0f\nO menor numero eh: %0.2f", num, menoval);
+		return 0;
+}
+	if (num - int(num) !=0 ) {
+		printf("O maoir numero  eh: %0.2f\nO menor numero eh: %.0f", num, menoval);
+		return 0;
+}
+	printf("O maoir numero  eh: %.0f\nO menor numero eh: %.0f", num, menoval);
+	return 0;  
 }
