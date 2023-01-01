@@ -9,18 +9,20 @@ programa para quando
 #include <stdio.h>
 
 int main() {
-  int num = 0, numpar = 0, pergunta = 0, cont = 0, num1;
+  int pergunta = 0, cont = 0, num = 0, num1, numpar = 0 ;
+  float n;
   printf("Quantos numeros no total? ");
   scanf("%d", & pergunta);
   
   while (cont < pergunta){
       cont = cont + 1;
       printf("Numeros para soma: ");
-      scanf("%d", &num1);
-      if (num1 > 1000 || num1 < 0){
-          printf("Nao sao permitidos numeros maiores que 1000 ou negativos.");
+      scanf("%f", &n);
+      if (n > 1000 || n < 0 || n - int(n)!= 0){
+          printf("Nao sao permitidos numeros maiores que 1000, ou nao inteiros, ou negativos.");
           return 0;
       }
+      num1= n;
       if (num1%2 !=0){
         num = num1 + num;
       }
@@ -34,5 +36,4 @@ int main() {
 printf("A soma dos numeros impares dados: %d\nA soma dos numeros pares dados: %d", num, numpar);
   
 }
-
 
