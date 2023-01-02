@@ -17,9 +17,8 @@ int main(){
 		massaatual -= massaatual / 2;
 		tempo += 50;
 	}
-	printf("%0.2f\n%d", massaatual, tempo);
 	hora = (tempo/60)/ 60;
 	minutos = (tempo - hora)/60;
 	segundos = tempo - minutos*60;
-	printf("Massa: %0.2f\nMassa Atual: %0.0f\nTempo gasto: %0.0fhoras %dmin %dseg", massa, massaatual, hora, minutos, segundos, massaatual);
+	printf("Massa: %0.2f\nMassa Atual: %0.2f\nTempo gasto: %.0fhoras %dmin %dseg", massa, massaatual, hora, minutos, segundos, massaatual);
 }
