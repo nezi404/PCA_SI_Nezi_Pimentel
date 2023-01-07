@@ -10,7 +10,7 @@ Escreva um programa em C com as seguintes funções:
 #include <stdlib.h>
 
 
-int num = 1, cont1 = 0, resul = 0, value;
+int num;
 
 void verpar(){
 	while (0==0){	
@@ -23,7 +23,7 @@ void verpar(){
 	}
 }	
 void verperfeito(){
-
+	int cont1 = 0, resul = 0;
 	while (resul < num  ){
 		cont1 = cont1 + 1;
 		if (num % cont1 == 0){
@@ -48,4 +48,3 @@ int main(){
 	}
 		
 		
-
