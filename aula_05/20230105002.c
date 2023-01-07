@@ -14,7 +14,6 @@ Utilizar as duas funções num programa.
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-#include <stdlib.h>
 
 
 float peso, sem;
