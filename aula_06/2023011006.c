@@ -4,19 +4,23 @@
 */
 
 #include <stdio.h>
+#include <string.h>
+
 void bitodec (int decin_){
 	int binar, divi = decin_;
-	while (divi != 1){
-	binar += divi % 2;
+	char tempchar[100], binastr[100];
+	while (divi != 0){
+	binar = divi % 2;
 	divi = divi/2;
-	if (divi == 1){
-		printf("0");
+	
+	sprintf(tempchar, "%d", binar);
+	strcat(binastr, tempchar);
+	
+	
+	
 	}
-	
-	printf("%d", binar);
-	
-	
-	}
+	// esta com erro no printf, esta imprimindo outros dois caracteres 
+	printf("%s", strrev(binastr));
 
 }
 
