@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+#include <stdlib.h>
 float numre = 2, numtan  = 0;
  
 float perg (){
@@ -25,6 +25,7 @@ float arctan(){
 		// a condicao não funcionou pra quando se quer a arctan de 1, nao consegui identificar o erro
 		
 		printf("pi eh dividido por 4, que resulta em aproximadamente 0,785");
+		exit(0);
 	}
 	
 	else{
