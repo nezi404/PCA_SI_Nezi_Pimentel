@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int numeros[100];
+
+void numerospares(float array){
+	int  pares[100];
+	int cont;
+	for (cont = 0; cont < 100; cont++){
+		if (numeros[cont] % 2 == 0){
+			pares[cont] = numeros[cont];
+			printf("%d\n", pares[cont]);
+			
+		}
+}
+}
+int main(){
+	int  cont;
+	
+	for (cont = 0; cont < 100; cont++){
+		printf("numeros: ");
+		scanf("%d", &numeros[cont]);
+		if (numeros[cont] > 100){
+			printf("Numero invalido!");
+			cont--;
+		}
+		
+	}
+	
+	numerospares(numeros[100]);
+	
+
+
+}
