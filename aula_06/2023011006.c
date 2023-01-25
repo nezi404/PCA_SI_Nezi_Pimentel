@@ -8,18 +8,17 @@
 
 void bitodec (int decin_){
 	int binar, divi = decin_;
-	char tempchar[100], binastr[100];
+	char tempchar[100], binastr[100] = " ";
 	while (divi != 0){
 	binar = divi % 2;
 	divi = divi/2;
 	
 	sprintf(tempchar, "%d", binar);
 	strcat(binastr, tempchar);
-	
+
 	
 	
 	}
-	// esta com erro no printf, esta imprimindo outros dois caracteres 
 	printf("%s", strrev(binastr));
 
 }
