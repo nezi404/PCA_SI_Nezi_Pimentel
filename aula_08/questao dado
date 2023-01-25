@@ -1,0 +1,36 @@
+online
+#include <stdio.h>
+int face(int array_, int num, int face_){
+    if (num == array_){
+        face_++;
+    }
+   return face_; 
+}
+
+int main() {
+    int tam, cont, fa1, fa2, fa3, fa4, fa5,fa6;
+    printf("quantas jogadas?");
+    scanf("%d", &tam);
+    int numjog[tam];
+    while (cont < tam){
+        printf("Numero obtido na jogada %d", cont + 1);
+        scanf("%d", &numjog[cont]);
+        cont++;
+    }
+    while (cont < tam){
+        face(numjog[cont], fa1, 1);
+        face(numjog[cont], fa2, 2);
+        face(numjog[cont], fa3, 3);
+        face(numjog[cont], fa4, 4);
+        face(numjog[cont], fa5, 5);
+        face(numjog[cont], fa6, 6);
+        
+        
+    }
+    
+    while (cont < tam){
+        printf("Numero  de ocorrecia da face  %d", cont + 1);
+        scanf("%d", &numjog[cont]);
+        cont++; 
+    }
+    }
