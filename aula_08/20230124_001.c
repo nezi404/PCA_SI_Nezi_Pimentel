@@ -8,7 +8,7 @@ int main(){
 		scanf("%f", &seq[cont]);
 		if (seq[cont] > 100
 		){
-			printf("Numero invalido");
+			printf("Numero invalido\n");
 			cont--;
 		}
 		
