@@ -19,7 +19,7 @@ int main(){
 	scanf("%d", &tam);
 	int numarray[tam];
 	while (conta < tam){
-	printf("Insira um número menor que 100: \n");
+	printf("Insira um numero menor que 100: \n");
 	scanf("%d", &numero);
 	if (numero > 100){
 		if (numero > 100){
