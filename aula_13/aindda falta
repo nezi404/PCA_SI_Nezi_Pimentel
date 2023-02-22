@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char joga[][20] = {"Hugo", "Matheus", "Santos", "Rodrigo", "Pereira", "David", "Cleiton", "Fabricio", "Pablo", "Matheuzinho", "Varela", "Felipe", "Ayrton", "Vidal", "Thiago", "Erick", "Gerson", "Everton", "Arrascaeta", "Victor", "Gabi", "Bruno", "Pedro" };
+    char fun[][20] = {"Goleiro", "Goleiro", "Goleiro", "Defesa", "Defesa", "Defesa", "Defesa", "Defesa", "Defesa", "Defesa", "Meio", "Meio", "Atacante", "Atacante", "Meio","Meio", "Atacante","Meio", "Meio", "Meio", "Meio", "Atacante", "Atacante"}, nome[25];
+    int i, avali[] = {5, 6, 8,6,7, 8, 5, 7, 9, 7, 8, 5, 8, 9, 5, 9, 7, 8, 7, 5, 7 , 9, 9}, achou = 0, cont = 0, naoachou = 0, ordem = 0;
+    char papel[][20]={"Goleiro", "Defesa", "Meio", "Atacante"}, seutime[23][25];
+
+    for (i = 0; i < 23; i++){
+        printf("%d - %s ->   Funcao : %s  ->         Avaliacao : %d \n", i + 1, joga[i], fun[i], avali[i]);
+    }
+
+    for (i = 0; i < 23; i++){
+
+        if (i < 1){
+
+        printf("Qual jogador deseja para %s\n", papel[0]);
+        scanf( "%s", nome);
+        ordem = 0;
+        }
+        if (i < 5 && i > 1){
+
+        printf("Qual jogador deseja para %s\n", papel[1]);
+        scanf( "%s", nome);
+        ordem = 1;
+        }
+        if (i < 9 && i > 5 ){
+
+        printf("Qual jogador deseja para %s\n", papel[2]);
+        scanf( "%s", nome);
+        ordem =2;
+        }
+        if (i < 11 && i > 9){
+
+        printf("Qual jogador deseja para %s\n", papel[3]);
+        scanf( "%s", nome);
+        ordem = 3;
+        }
+        
+       achou = 0
+        while (achou < 23){
+       
+
+        
+        if (strcmp(papel[ordem], fun[achou])== 0){
+            printf("Iguall");
+                strcpy(seutime[cont], nome);
+                cont++;
+                achou = 25;
+            }
+        if (achou == 22){
+                    printf("Numero nao encontrado, Tente novamente");
+                    i--;
+                }
+
+        achou++;
+ 
+        }
+        achou = 0;
+    }    
+    
+    for (i =0; i < 23; i++){
+        printf("Seu time: %s", seutime[i]);
+    }
+}                                                                                                                                                                                                                                                                          
