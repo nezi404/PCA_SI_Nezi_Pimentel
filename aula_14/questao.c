@@ -27,7 +27,18 @@ int adicionapontos(char genero[15], int i, int index, int nota){
     return 0;
 }
 
-adicionaraluno(){
+char adicionaraluno(char nomes[][15], char generos[][2], int notas[15]){
+    char nome[15], genero[10];
+    int nota = 0;
+    printf("Nome: ");
+    scanf("%s", nome);
+    printf("Genero: ");
+    scanf("%s", genero);
+    printf("Nota: ");
+    scanf("%d", &nota);
+    strcpy(nomes[13], nome);
+    strcpy(generos[13], genero);
+    notas[13] = nota;
     
 }
 
@@ -53,17 +64,14 @@ int main() {
     }
     
     if (contm1 > contm2){
-        printf("A equipe 1 possui mais mulheres");
+        printf("A equipe 1 possui mais mulheres\n");
     }
     if (contm1 < contm2){
-        printf("A equipe 2 possui mais mulheres");
+        printf("A equipe 2 possui mais mulheres\n");
     }
     if (contm1 == contm2){
-        printf("As duas equipes possuem a mesma quantidade de mulheres");
+        printf("As duas equipes possuem a mesma quantidade de mulheres\n");
     }
+    adicionaraluno(equipes, gen, notas);
+    printf("aluno %s\nnota: %d\ngenero:%s",equipes[13], notas[13], gen[13] );
 }
-    
-    
-    
-    
-  
