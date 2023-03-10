@@ -2,13 +2,12 @@
 #include <string.h>
 
 void acharletra(char *palavra, char *letra, char *endchar, int *tamvet){
-    int vetor[30], *pvet = &vetor[0], numoco=0, cont=0, numum= 1, *pnumum= &numum;
+    int vetor[30], *pvet = &vetor[0], cont=0;
     char  *pcurchar = palavra;
     while (palavra[cont]!= *endchar){
         vetor[cont] = 0;
         if (*letra == palavra[cont]){
             vetor[cont] = 1;
-            *pnumum++;
             *tamvet = *tamvet + 1;
         }
         printf("%c ", palavra[cont]);
