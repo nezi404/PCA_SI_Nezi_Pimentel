@@ -1,5 +1,5 @@
 #include <stdio.h>
-int achar( int *ponteiron, int *ponteiroatual){
+int *achar( int *ponteiron, int *ponteiroatual){
     if (*ponteiron == *ponteiroatual ){
         
         //printf("O ponteiro do valor %d eh %d\n", *ponteiroatual, ponteiroatual);
@@ -28,7 +28,7 @@ int main() {
             printf("Nao encontrado na lista\n");
         }
         else{
-            printf("O valor %d eh %d\n", numerodois, ver);
+            printf("O valor %d eh %d\n", *ver, ver);
         }
     }
 
