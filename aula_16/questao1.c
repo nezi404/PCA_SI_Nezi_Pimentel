@@ -2,23 +2,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void mediaDesvio(float *vetor, int tam, float *med, float *des ){
-    float value=0, *media ;
+void *mediaDesvio(float *vetor, float **tam, float **med, float **des ){
+    float value=0, *pvalue = &value;
     int j;
-    for(j=0;j<tam;j++){
-        value += *(vetor+j);
+    for(j=0;j<**tam;j++){
+        *pvalue += *(vetor+j);
     }
-    media = &value;
-    med = media;
+    
+    
+    **med = (*pvalue)/(**tam);
     printf("Valores somados %f", value);
-        printf("Valores media %f", med);
+        printf("Valores media %f", *med);
 
 }
 int main() {
-    float *vet, nota, *media, *desvio;
-    int tam, i;
+    float *vet, nota, *media, *desvio, tam,*ptam=&tam;
+    int  i;
     printf("Quantos alunos?\n"),
-    scanf("%d", &tam );
+    scanf("%f", &tam );
     vet = malloc(tam* sizeof(float));
     if (vet != NULL){
         printf("Alocação de memoria executada com sucesso");
@@ -28,7 +29,8 @@ int main() {
             *(vet+i)=nota;
             printf("nota %f\n", *(vet+i));
         }
-        mediaDesvio(vet, tam, media, desvio);
+        mediaDesvio(vet, &ptam, &media, &desvio);
+        printf("Valores media fora da funcao %f", media);
         
     }
     else{
